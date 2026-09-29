@@ -51,41 +51,26 @@ const botaoPrincipal = document.getElementById("botaoPrincipal");
 const botaoSecundario = document.getElementById("botaoSecundario");
 const caixas = document.querySelectorAll(".caixa");
 
-
 botaoPrincipal.addEventListener("click", function () {
-    caixas[0].style.border = "2px solid red";
-    caixas[1].style.border = "2px solid red";
-    caixas[2].style.border = "2px solid red";
+    caixas[0].style.backgroundColor = "red";
+    caixas[1].style.backgroundColor = "red";
+    caixas[2].style.backgroundColor = "red";
 });
 
 botaoSecundario.addEventListener("click", function () {
-    caixas[0].style.border = "";
-    caixas[1].style.border = "";
-    caixas[2].style.border = "";
+    caixas[0].style.backgroundColor = "";
+    caixas[1].style.backgroundColor = "";
+    caixas[2].style.backgroundColor = "";
 });
 
-
 caixas[0].addEventListener("click", function () {
-    if (caixas[0].style.border === "") {
-        caixas[0].style.border = "2px solid red";
-    } else {
-        caixas[0].style.border = "";
-    }
+    caixas[0].style.backgroundColor = "green";
 });
 
 caixas[1].addEventListener("click", function () {
-    if (caixas[1].style.border === "") {
-        caixas[1].style.border = "2px solid red";
-    } else {
-        caixas[1].style.border = "";
-    }
+    caixas[1].style.backgroundColor = "green";
 });
 
-
 caixas[2].addEventListener("click", function () {
-    if (caixas[2].style.border === "") {
-        caixas[2].style.border = "2px solid red";
-    } else {
-        caixas[2].style.border = "";
-    }
+    caixas[2].style.backgroundColor = "green";
 });
